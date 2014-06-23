@@ -1,0 +1,55 @@
+.social-buttons{
+overflow: hidden;
+padding-left: 4px;
+}
+
+.social-buttons li a{
+	background: url("/assets/images/social-buttons.png");
+	background-repeat: no-repeat;
+	height: 54px;
+	width: 54px;
+	max-height: 50px;
+max-width: 50px;
+
+	display: inline-block;
+}
+
+#social-button-list li{
+	display: inline-block;
+	float: center;
+	margin-right: 20px;
+	position: relative;
+	width: 6%;
+}
+
+#social-button-list{
+	margin: 0;
+	padding: 0;
+}
+
+#btn-phone a { background-position: -684px -56px; }
+#btn-phone a:hover { background-position: -684px -2px; }
+#btn-email a { background-position: -616px -56px; }
+#btn-email a:hover { background-position: -616px -2px; }
+#btn-linkedin a { background-position: -1px -3px; }
+#btn-linkedin a:hover { background-position: -1px -56px; }
+#btn-spotify a { background-position: -69px -3px; }
+#btn-spotify a:hover { background-position: -69px -56px; }
+#btn-google a { background-position: -139px -3px; }
+#btn-google a:hover { background-position: -139px -56px; }
+#btn-instagram a { background-position: -207px -3px; }
+#btn-instagram a:hover { background-position: -207px -56px; }
+#btn-foursquare a { background-position: -276px -3px; }
+#btn-foursquare a:hover { background-position: -276px -56px; }
+#btn-pinterest a { background-position: -343px -3px; }
+#btn-pinterest a:hover { background-position: -343px -56px; }
+#btn-twitter a { background-position: -413px -3px; }
+#btn-twitter a:hover { background-position: -413px -56px; }
+#btn-facebook a { background-position: -482px -3px; }
+#btn-facebook a:hover { background-position: -482px -56px; }
+#btn-strava a { background-position: -549px -3px; }
+#btn-strava a:hover { background-position: -549px -56px; }
+#btn-behance a { background-position: -886px -3px; }
+#btn-behance a:hover { background-position: -886px -56px; }
+#btn-dribble a { background-position: -950px -3px; }
+#btn-dribble a:hover { background-position: -950px -56px; }
