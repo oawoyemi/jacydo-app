@@ -1,7 +1,72 @@
 @(message: String)
 
 @main("Welcome to Play") {
+<div class="header">
+    <ul class="nav nav-pills pull-right">
+        <li><a href="index.html">Cymraeg</a></li>
+        <li><a href=index-eng.html">English</a></li>
+    </ul>
+    <!--     <h3 class="text-muted">Penarth</h3> -->
 
-    @play20.welcome(message)
+    <address>
+        Albert Road Methodist Church<br>
+        Penarth CF64 1BY<br>
+        <abbr title="Phone">Tel:</abbr> 0783 0909 339<br>
+        <a href="mailto:jacydo@@bulbview.com">jacydo@@bulbview.com</a>
+    </address>
+
+</div>
+<div class="jumbotron">
+    <h1>Jac y Do</h1>
+
+    <p class="lead"><span class="label label-primary">Brand New!</span> parent and child group for babies and young
+        children. Come to speak, hear and learn Welsh</p>
+    <h4 class="text-primary">Free taster session TUESDAY, 4th March</h4>
+
+    <div class="social-buttons">
+        <p id="findmeonline">To register contact <a href="mailto:jacydo@@bulbview.com" target="_top">
+            Catrin:</a></p>
+        <ul id="social-button-list" class="list">
+            <li id="btn-google">
+                <a target="_blank" href="https://plus.google.com/b/111056330298262727555/?hl=en-GB"></a>
+
+                <div class="btn-bubble">
+                    <span class="btn-title"></span>
+
+                </div>
+            </li>
+            <li id="btn-twitter">
+                <a target="_blank" href="https://twitter.com/JacyDoPenarth"></a>
+
+                <div class="btn-bubble">
+                    <span class="btn-title"></span>
+
+                </div>
+            </li>
+            <li id="btn-facebook">
+                <a target="_blank" href="https://www.facebook.com/jacydopenarth"></a>
+
+                <div class="btn-bubble">
+                    <span class="btn-title"></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="center-block">
+    <p class="lead text-center"><em>Story, Singing, Music, Craft, Play</em>
+</div>
+
+<div class="row marketing">
+    <div class="col-lg-6">
+        <h4>10-11am, Tuesdays</h4>
+        Albert Road Methodist Church<br> Penarth</p>
+    </div>
+    <div class="col-lg-6">
+        <h4>&#163;5 per family</h4>
+
+        <p>Includes snack for children and tea/coffee for adults</p>
+    </div>
+</div>
 
 }
