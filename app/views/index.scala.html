@@ -7,24 +7,18 @@
         <li><a href=index-eng.html">@Messages("language.selector.english")</a></li>
     </ul>
     <div>
-        <address>
-            @Html(Messages("address"))<br/>
-            <abbr title="Phone">@Messages("contact.phone.label") </abbr>@Messages("contact.mobile")<br>
-            <a href="mailto:@Messages("email")">@Messages("email")</a>
-        </address>
+      @Messages("contact.me")<br/>
+      <a href="mailto:@Messages("email")">@Messages("email")</a><br/>
+      @Messages("contact.mobile")<br/>
     </div>
 </div>
 
 <div class="jumbotron">
     <h1>@Messages("title")</h1>
-
-    <p class="lead"><span class="label label-primary">Brand New!</span> parent and child group for babies and young
-        children. Come to speak, hear and learn Welsh</p>
-    <h4 class="text-primary">Free taster session TUESDAY, 4th March</h4>
+    <h4 class="text-primary">@Html(Messages("lead"))</h4>
+    <p class="lead">@Html(Messages("body"))</p>
 
     <div class="social-buttons">
-        <p id="findmeonline">To register contact <a href="mailto:@Messages("email")" target="_top">
-            Catrin:</a></p>
         <ul id="social-button-list" class="list">
             <li id="btn-google">
                 <a target="_blank" href="https://plus.google.com/b/111056330298262727555/?hl=en-GB"></a>
@@ -52,21 +46,18 @@
         </ul>
     </div>
 </div>
-<div class="center-block">
-    <p class="lead text-center"><em>Story, Singing, Music, Craft, Play</em>
-</div>
-
 <div class="row marketing">
     <div class="col-lg-6">
-        <h4>10-11am, Tuesdays</h4>
+        <h4>@Messages("session.time")</h4>
         @Html(Messages("address"))
     </div>
     <div class="col-lg-6">
-        <h4>&#163;5 per family</h4>
+        <h4>@Messages("price")</h4>
 
         <p>Includes snack for children and tea/coffee for adults</p>
     </div>
 </div>
+<div class="alert alert-warning" role="alert">Every other week during the summer holidays (25 July, 8 & 22 August). Then weekly from 5 September</div>
 
 <div class="footer">
     <p>&copy; @Messages("title") 2014</p>
