@@ -8,7 +8,7 @@
     </ul>
     <div>
         <address>
-            @Messages("address").split("\n").map {l => @l <br>}
+            @Html(Messages("address"))<br/>
             <abbr title="Phone">@Messages("contact.phone.label") </abbr>@Messages("contact.mobile")<br>
             <a href="mailto:@Messages("email")">@Messages("email")</a>
         </address>
@@ -59,7 +59,7 @@
 <div class="row marketing">
     <div class="col-lg-6">
         <h4>10-11am, Tuesdays</h4>
-        Albert Road Methodist Church<br> Penarth</p>
+        @Html(Messages("address"))
     </div>
     <div class="col-lg-6">
         <h4>&#163;5 per family</h4>
@@ -69,7 +69,7 @@
 </div>
 
 <div class="footer">
-    <p>&copy; Jac y Do 2014</p>
+    <p>&copy; @Messages("title") 2014</p>
 </div>
 
 }
