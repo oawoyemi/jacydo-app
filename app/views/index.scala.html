@@ -1,30 +1,29 @@
 @(message: String)
 
-@main("Welcome to Play") {
+@main(Messages("title")) {
 <div class="header">
     <ul class="nav nav-pills pull-right">
-        <li><a href="index.html">Cymraeg</a></li>
-        <li><a href=index-eng.html">English</a></li>
+        <li><a href="index.html">@Messages("language.selector.welsh")</a></li>
+        <li><a href=index-eng.html">@Messages("language.selector.english")</a></li>
     </ul>
-    <!--     <h3 class="text-muted">Penarth</h3> -->
-
-    <address>
-        Albert Road Methodist Church<br>
-        Penarth CF64 1BY<br>
-        <abbr title="Phone">Tel:</abbr> 0783 0909 339<br>
-        <a href="mailto:jacydo@@bulbview.com">jacydo@@bulbview.com</a>
-    </address>
-
+    <div>
+        <address>
+            @Messages("address").split("\n").map {l => @l <br>}
+            <abbr title="Phone">@Messages("contact.phone.label") </abbr>@Messages("contact.mobile")<br>
+            <a href="mailto:@Messages("email")">@Messages("email")</a>
+        </address>
+    </div>
 </div>
+
 <div class="jumbotron">
-    <h1>Jac y Do</h1>
+    <h1>@Messages("title")</h1>
 
     <p class="lead"><span class="label label-primary">Brand New!</span> parent and child group for babies and young
         children. Come to speak, hear and learn Welsh</p>
     <h4 class="text-primary">Free taster session TUESDAY, 4th March</h4>
 
     <div class="social-buttons">
-        <p id="findmeonline">To register contact <a href="mailto:jacydo@@bulbview.com" target="_top">
+        <p id="findmeonline">To register contact <a href="mailto:@Messages("email")" target="_top">
             Catrin:</a></p>
         <ul id="social-button-list" class="list">
             <li id="btn-google">
@@ -67,6 +66,10 @@
 
         <p>Includes snack for children and tea/coffee for adults</p>
     </div>
+</div>
+
+<div class="footer">
+    <p>&copy; Jac y Do 2014</p>
 </div>
 
 }

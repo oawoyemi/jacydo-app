@@ -11,5 +11,7 @@ libraryDependencies ++= Seq(
   anorm,
   cache,
   ws,
-  "org.webjars" % "bootstrap" % "3.0.2"
+  "org.webjars" %% "webjars-play" % "2.3.0",
+  "org.webjars" % "bootstrap" % "3.1.1",
+  "org.webjars" % "angularjs" % "1.2.16"
 )
